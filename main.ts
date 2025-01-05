@@ -10,9 +10,9 @@ const changeXToS = (x: string) => x.replace(/^x/, "s").replace(/^X/, "S");
 
 const buihienify = (x: string) => {
   const [result] = [x]
-    .map(([x]) => stripDiacritics(x))
-    .map(([x]) => changeTrToCh(x))
-    .map(([x]) => changeGiToD(x))
-    .map(([x]) => changeXToS(x));
+    .map(stripDiacritics)
+    .map(changeTrToCh)
+    .map(changeGiToD)
+    .map(changeXToS);
   return result;
 }
