@@ -13,5 +13,6 @@ const buihienify = (x: string) => {
     .map(([x]) => stripDiacritics(x))
     .map(([x]) => changeTrToCh(x))
     .map(([x]) => changeGiToD(x))
-    .map(([x]) => changeXToS(x))
+    .map(([x]) => changeXToS(x));
+  return result;
 }
